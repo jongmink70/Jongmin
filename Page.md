@@ -1,6 +1,0 @@
-#Jongmin
-
-Pagelist
-
-netmarble
-dungeon
