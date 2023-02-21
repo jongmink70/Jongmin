@@ -49,6 +49,9 @@ li{
    line-height: 62px;
 }
 
+.logo .left:hover>.hamburger:before ,.logo .left:hover>.hamburger:after, .logo .left:hover>.hamburger div{background-color: #0077ff;}
+.logo .left:hover>.menu ,.right div:nth-child(3):hover{color: #0077ff;}
+
 .logo .hamburger{position: relative; width: 16px; height: 16px;}
 .hamburger:before, .hamburger div, .hamburger:after{
    position: absolute;
@@ -57,13 +60,16 @@ li{
    left: 0;
    background-color: black;
    content: "";
-   display: block;}
+   display: block;
+   transition: 0.3s;
+}
 .hamburger:before{top: 0;} .hamburger div{top: 50%; transform: translateY(-50%);} .hamburger:after{bottom: 0;}
 
 .logo .menu{
    color: #17191d;
    font-weight: bold;
    padding-right: 6px;
+   transition: 0.3s;
 }
 
 .logo .center{
@@ -566,7 +572,7 @@ li{
    font-size: 12px;
    margin-bottom: 10px;
 }
-.footer li:first-child{padding: 0 0;}
+.footer li:first-child{padding: 0 8px 0 0;}
 .footer .black{color: #000;}
 .footer li:after{
    position: absolute;
