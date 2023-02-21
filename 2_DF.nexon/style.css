@@ -441,8 +441,22 @@ li{
 
 .rightbox .gamestart{
    height: 175px;
+   width: 240px;
    position: relative;
    background:url("https://cdn.df.nexon.com/img/web/common/game_start_sp.jpg");
+}
+.rightbox .gamestart:hover{
+   animation: animate 2s steps(46) infinite;
+}
+
+@keyframes animate{
+   -10% {
+      background-position: 0;
+   }
+   100% {
+      background-position: 0 -8050px;
+   }
+
 }
 
 .rightbox .download{

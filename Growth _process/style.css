@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+.logo{
+    position: relative;
+}
+
+.logo .title{
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo .name{
+    position: absolute;
+    color: white;
+    right: 0;
+    bottom: 0;
+}
+
+.studylist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 1000px;
+    border-right: 5px solid rgba(201, 201, 201, 0.884);
+}
+
+.studylist .listhead{
+    margin-top: 30px;
+    height: 50px;
+    line-height: 45px;
+    border: 4px solid rgba(201, 201, 201, 0.884);
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.studylist .list{
+    width: 150px;
+    height: 850px;
+
+}
+
+.circle1, .circle2{
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.circle1{background-color: red;}
+.circle2{background-color: orange;}
+.studylist .hd{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+.studylist .fz{
+    margin-top: 10px;
+    font-size: 10px;
+    color: white;
+}
+
