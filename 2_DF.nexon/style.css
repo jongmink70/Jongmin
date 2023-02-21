@@ -1,0 +1,590 @@
+@charset "UTF-8";
+
+
+/*###############전체선택자 속성값###############*/
+*{
+   margin: 0; padding: 0; box-sizing: border-box;
+}
+
+a:link, a:visited{
+   text-decoration: none; color: black;
+}
+
+li{
+   list-style: none;
+}
+/*###############클래스 공통 속성값###############*/
+.Flex{
+   display: flex;
+}
+.Flex_aic{
+   display: flex;
+   align-items: center;
+}
+.Flex_cc{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.FC_basicgray{
+   color: #65666E;
+}
+.Pointer{
+   cursor: pointer;
+}
+
+/*###############탑 로고###############*/
+.logo{
+   width: 100%;
+   min-width: 1270px;
+   height: 62px;
+   justify-content: space-between;
+   padding: 23px 30px 23px 21px;
+}
+
+.logo .left{
+   width: 65px;
+   height: 62px;
+   justify-content: space-between;
+   line-height: 62px;
+}
+
+.logo .hamburger{position: relative; width: 16px; height: 16px;}
+.hamburger:before, .hamburger div, .hamburger:after{
+   position: absolute;
+   height: 2.3px;
+   width: 100%;
+   left: 0;
+   background-color: black;
+   content: "";
+   display: block;}
+.hamburger:before{top: 0;} .hamburger div{top: 50%; transform: translateY(-50%);} .hamburger:after{bottom: 0;}
+
+.logo .menu{
+   color: #17191d;
+   font-weight: bold;
+   padding-right: 6px;
+}
+
+.logo .center{
+   padding-left: 245px;
+   padding-top: 5px;
+}
+
+.logo .cardimg, .logo .pcroomimg{
+   width: 33px;
+}
+.right div{
+   margin-right: 10px;
+}
+.right div:nth-child(3){
+   font-size: 14px;
+   font-weight: bold;
+   color: #17191D;
+   height: 36px;
+   line-height: 36px;
+   text-align: center;
+}
+.right div:last-child{
+   margin-right: 0;
+   font-size: 15px;
+   font-weight: bold;
+   color: #080410;
+   border-radius: 19px;
+   border: 2px solid #17191D;
+   width: 115.7px;
+   height: 36px;
+   line-height: 30px;
+   text-align: center;
+}
+
+/*###############백그라운드이미지###############*/
+.bcgimg{    
+   width: 100%;
+   min-width: 1270px;
+   height: 2000px;
+   background: url("https://bbscdn.df.nexon.com/data6/commu/202301/110128_63bb757862899.jpg") center 0 no-repeat;
+}
+/*###############메인박스###############*/
+.mainwrap{
+   position: sticky;
+   margin:0 auto;
+   min-width: 1270px;
+   width: 1270px;
+   height: 100%;
+}
+/*###############메인박스-탑###############*/
+.topbox{
+   position: relative;
+   width: 100%;
+}
+.topbox img{position: absolute;}
+.topbox .img1{left: -20px;top: 20px;}
+.topbox .img2{left: 180px; top: 40px;}
+.topbox .img3{right: 0;}  
+
+/*###############메인박스-미드이미지###############*/
+
+.mainmenu{
+   background: url("https://cdn.df.nexon.com/img/web/main/bg_container.png?v=20160623") no-repeat;
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+/*###############메인박스 l,c,r 3분할###############*/
+.mainmenu .leftbox, .mainmenu .centerbox, .mainmenu .rightbox{
+   margin-top: 150px;
+}
+.mainmenu .leftbox{width: 180px;}
+.mainmenu .centerbox{width: 850px;}
+.mainmenu .rightbox{width: 240px;}
+
+/*###############메인박스 left###############*/
+
+.leftbox .leftlist{
+   padding: 15px 0;
+   border-bottom: 1px solid #4a4c5b;
+}
+
+.leftlist .leftbox_left{
+   width: 75px;
+   font-size: 12px;
+   font-weight: bold;
+   color: #d2d5e1;
+   padding: 4px 0 0 15px
+}
+.leftlist ul{
+   width: 90px;
+}
+.leftlist li{
+   font-size: 11px;
+   padding: 4px 10px 3px 0;
+   color: #a1a4af;
+   border-bottom: 1px solid #4a4c5b;
+}
+.leftlist li:last-child{
+   border-bottom: none;
+}
+.lastleftlist .a1{
+   width: 100%;
+   height: 33px;
+   line-height: 33px;
+   text-align: center;
+   font-size: 11px;
+   color: #d2d5e1;
+   border-bottom: 1px solid #4a4c5b; 
+}
+.lastleftlist .a1:first-child{
+   border-right: 1px solid #4a4c5b;
+}
+/*###############메인박스 center###############*/
+
+.centerbox .mainimgbox{
+    position: relative;
+    height: 200px;
+   }
+.centerbox .mainimgbox img{
+   position: absolute;
+   width: 850px;
+   height: 350px;
+   bottom: 0;
+}
+
+.centerbox .mainlist{
+   padding: 45px 40px 50px 45px;
+}
+
+.centerbox .mainlist .leftside{
+   width: 350px;
+   margin-right: 40px;
+}
+
+.centerbox .topword{
+   padding: 5px 0;
+   justify-content: space-between;
+   border-bottom: 1px solid #e8e8ec;
+   margin-bottom: 10px;
+   height: 31px;
+}  
+.leftside .leftword{
+   width: 48px;
+   height: 18px;
+}
+.leftside .rightword div{
+   position: relative;
+   padding: 0 7px;
+   font-size: 11px;
+   color: #79797f;
+   line-height: 20px;
+}
+.leftside .rightword div:first-child{
+   color: #33343b;
+   font-weight: bold;
+}
+.leftside .rightword div:last-child{padding-right:0;}
+
+.leftside .rightword div:after{
+   position: absolute;
+   display: block;
+   content: "";
+   width: 1px;
+   height: 10px;
+   background-color: #79797f;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+}
+.leftside .rightword div:last-child:after{display: none;}
+
+.leftside .list1{
+   margin-left: 8px;
+   position: relative;
+   font-size: 12px;
+   color: #65666e;
+   margin-bottom: 5.5px;
+}
+.leftside .list1:first-child{font-weight: bold;}
+.leftside .list1:after{
+   display: block;
+   content: url("https://cdn.df.nexon.com/img/web/bu/bu_dot.gif");
+   position: absolute;
+   top: -3px;
+   left: -7px;
+}
+
+.leftside .imgbox2{
+   width: 350px;
+   height: 130px;
+   margin: 18px 0 50px 0;
+}
+.leftside .imgbox2 img{
+   width: 100%;
+   height: 100%;
+}
+.leftside .listbox2{
+   margin-bottom: 3px;
+}
+
+.leftside .bcgbox{
+   font-size: 11px;
+   color: #ffffff;
+   background-color: #939aa7;
+   padding: 3px 35px;
+   border: 1px solid #646f83;
+}
+
+.leftside .list2{
+   padding: 3px 0;
+   font-size: 12px;
+   color: #65666e;
+   margin-left: 10px;
+}
+
+.centerbox .mainlist .rightside{width: 380px;}
+.rightside .topword1{
+   padding: 5px 0;
+   border-bottom: 1px solid #e8e8ec;
+   height: 31px;
+}  
+.rightside .rightlist{
+   padding: 10px 0;
+   border-bottom: 1px solid #e8e8ec;
+}
+.rightside .wordbox{margin-left: 10px;}
+.rightside .wordbox p:first-child{
+   font-size: 12px;
+   font-weight: bold;
+   color: #33343b;  
+}
+.rightside .wordbox p:nth-child(2){
+   font-size: 12px;
+   color: #86878f;
+}
+.rightside .wordbox p:last-child{
+   font-size: 11px;
+   color: #4770ae;
+}
+
+.rightside .imgwrap{
+   position: relative;
+   width: 380px;
+   height: 193px;
+   margin-top: 50px;
+} 
+.rightside .imgwrap img, .rightside .imgwrap p{
+   position: absolute;
+}
+.rightside .imgwrap .a1, .rightside .imgwrap .a2{
+   width: 100%;
+   height: 100%;
+}
+.rightside .imgwrap .a3{
+   left: 30px;
+   top: 30px;
+}
+.rightside .imgwrap .a4{
+   left: 30px;
+   top: 86px;
+   color: #fff;
+   font-weight: 700;
+}
+.rightside .imgwrap .a5{
+   left: 30px;
+   top: 111px;
+   font-size: 12px;
+   color: #999;
+   font-weight: 400;
+}
+.rightside .imgwrap .a6{
+   left: 30px;
+   bottom: 30px;
+}
+
+.centerbox .middlebanner{
+   margin: 45px 0 35px 0 ;
+}
+
+
+.bottom .linewrap{
+   margin-bottom: 10px;
+}
+
+.bottom .boxbox{
+   margin-right: 7px;
+}
+
+.bottom .bimgbox{
+   position: relative;
+   border:1px solid #e8e8ec;
+   width: 250px;
+   height: 120px;
+   overflow: hidden;
+}
+
+
+.bimgbox:after{
+   content: "";
+   display: "";
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.37);
+   width: 244px;
+   height: 114px;
+   left: -1px;
+   border: 3px solid red;
+   visibility: hidden;
+}
+.bimgbox:hover:after{
+   visibility: visible;
+}
+
+.bottom img{
+   width: 100%;
+   height: 100%;
+}
+
+.bottom .bimgbox .deco, .bottom .bimgbox .deco2, .bottom .bimgbox .deco3{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   font-size: 11px;
+   text-align: center;
+   padding: 4px;
+}
+.bottom .bimgbox .deco{background-color: #1eb0bf; width: 83px;}
+.bottom .bimgbox .deco2{background-color: #913c34; width: 81px;}
+.bottom .bimgbox .deco3{background-color: #1e45bf; width: 64px;}
+
+
+.centerbox .bottomwordbox{
+   width: 250px;
+   height: 45px;
+   padding: 5px 0;
+   border: 1px solid #e8e8ec;
+   border-top: none;
+}
+.bottomwordbox img{
+   width: 16px;
+   height: 16px;
+}
+.bottomwordbox .cimg{
+   margin-top: 3px;
+   margin-right: 5px;
+}
+.bottomwordbox .bword1{
+   color: #65666e;
+   font-size: 12px;
+   text-align: center;
+}
+.bottomwordbox .bword2{
+   color: #4770ae;
+   font-size: 11px;
+   text-align: center;
+}
+.bottom .over{
+   position: relative;
+   top: -40px;
+   width: 100%;
+   height: 200px;
+}
+
+/*###############메인박스 right###############*/
+
+.rightbox .gamestart{
+   height: 175px;
+   position: relative;
+   background:url("https://cdn.df.nexon.com/img/web/common/game_start_sp.jpg");
+}
+
+.rightbox .download{
+   position: relative;
+   background-color: #10224f;
+   border-top: #0a183a;
+   border-bottom: #0a183a;
+   top: -10px;
+}
+.rightbox .a2{
+   padding: 10px 5px;
+   font-size: 11px;
+   color: #8d98ae;
+}
+.rightbox .line{
+   width: 1px;
+   height: 10px;
+   background-color:#8d98ae;
+   margin: 0 5px;
+}
+
+.rightbox .loginbox{
+   padding: 20px 20px;
+   border-bottom: 1px solid #e8e8ec;
+}
+
+
+
+.rightbox .nexon, .rightbox .df{
+   font-size: 12px;
+   font-weight: bold;
+   color: #FFFFFF;
+   padding: 15px 0;
+   text-align: center;
+}
+.rightbox .nexon{
+   background-color: #3392FF;
+   margin-bottom: 5px;
+}
+.rightbox .df{
+   background-color: #484e5f;
+   margin-bottom: 15px;
+}
+.rightbox .newuser{
+   font-size: 11px;
+   color: #989cad;
+   text-align: center;
+}
+
+.rightbox .gide{
+   border-bottom: 1px solid #e8e8ec;
+}
+
+.rightbox .a3{
+   padding: 10px 24px;
+   font-size: 11px;
+   color: #3e414f;
+   border-bottom: 1px solid #e8e8ec;
+   background-color: white;
+}
+.rightbox .a3:first-child{
+   border-bottom: 1px solid #e8e8ec;
+   border-right: 1px solid #e8e8ec;
+}
+
+.rightbox .a3:first-child:hover, .rightbox .a3:nth-child(2):hover{
+   border-bottom: none;
+   font-weight: bold;
+   background-color: transparent;
+}
+
+.rightbox .posi{position: relative;}
+.rightbox .storebox, .rightbox .storebox1{
+   width: 240px;
+   padding: 20px 20px 5px 20px;
+   position: absolute;
+   top: 35px;
+}
+.rightbox .storebox{visibility: visible;}
+.rightbox .storebox1{visibility: hidden;}
+.rightbox .storeimg{
+   width: 28px;
+   height: 28px;
+   margin-right: 10px;
+}
+.rightbox .r4{
+   font-size: 12px;
+   color: #65666e;
+}
+.rightbox .r5{
+   font-size: 11px;
+   color: #989cad;
+}
+.rightbox .button{justify-content: flex-end;}
+
+.rightbox .a3:nth-child(2):hover~.storebox{
+   visibility: hidden;
+}
+.rightbox .a3:nth-child(2):hover~.storebox1{
+   visibility: visible;
+}
+
+.rightbox .coupon{
+   margin-top: 75px;
+}
+.rightbox .imgbanner, .rightbox .imgbanner2, .rightbox .imgbanner3{
+    position: relative;
+    top: -10px;
+ }
+.rightbox .imgbanner{height: 46px;}
+.rightbox .imgbanner2{height: 148px;}
+.rightbox .imgbanner3{height: 47px;}
+
+
+/*footer----------------------------*/
+.footer{
+   position: absolute;
+   width: 100%;
+   height: 195px;
+   background-color: white;
+   bottom: 0;
+   border-top: 1px solid #e8e8ec;
+   padding: 30px 0 0 40px;
+}
+.footer li{
+   position: relative;
+   padding: 0 8px;
+   color: #666;
+   font-weight: bold;
+   font-size: 12px;
+   margin-bottom: 10px;
+}
+.footer li:first-child{padding: 0 0;}
+.footer .black{color: #000;}
+.footer li:after{
+   position: absolute;
+   display: block;
+   content: "";
+   width: 1px;
+   height: 12px;
+   background-color: #d1d1d1;
+   right: 0;
+   top: 50%;
+   transform: translateY(-40%);
+}
+.footer li:last-child:after{display: none;}
+.footer p{color: #888888; font-size: 11px;}
+.footer p span{text-decoration: underline;}
+.footer p:nth-child(4){
+   font-weight: bold;
+   margin-top: 5px;
+   margin-bottom: 17px;
+}
+.footer img:nth-child(5){margin-right: 15px;}
