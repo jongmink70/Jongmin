@@ -78,8 +78,39 @@ li{
 }
 
 .logo .cardimg, .logo .pcroomimg{
+   position: relative;
    width: 33px;
 }
+.logo .cardimg:after, .logo .pcroomimg:after{
+   display: block;
+   height: 15px;
+   line-height: 15px;
+   background-color:black;
+   color: white;
+   position: absolute;
+   font-size: 11px;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -14px;
+   text-align: center;
+   border-radius: 100px;
+   border: 1px solid black;
+   opacity: 0;
+   transition: 0.3s;
+}
+.logo .cardimg:after{
+   content: "넥슨현대카드";
+   width: 80px;
+}
+.logo .pcroomimg:after{
+   content: "PC방";
+   width: 40px;
+}
+.logo .cardimg:hover:after, .logo .pcroomimg:hover:after{
+   opacity: 1;
+}
+
+
 .right div{
    margin-right: 10px;
 }
@@ -132,7 +163,7 @@ li{
 }
 .topbox img{position: absolute;}
 .topbox .img1{left: -20px;top: 20px;}
-.topbox .img2{left: 180px; top: 40px;}
+.topbox .img2{left: 180px; top: 40px; z-index: 9999;}
 .topbox .img3{right: 0;}  
 
 /*###############메인박스-미드이미지###############*/
@@ -193,11 +224,21 @@ li{
     position: relative;
     height: 200px;
    }
-.centerbox .mainimgbox img{
+.centerbox .mainimgbox img, .centerbox .mainimgbox div{
    position: absolute;
+   bottom: 0;
+}
+.centerbox .mainimgbox .mainimg1{
    width: 850px;
    height: 350px;
-   bottom: 0;
+}
+.centerbox .mainimgbox .mainimg2{
+   right: -37px;
+}
+.centerbox .mainimgbox .blankbox{
+   width: 850px;
+   height: 200px;
+   z-index: 999;
 }
 
 .centerbox .mainlist{
@@ -266,10 +307,16 @@ li{
    width: 350px;
    height: 130px;
    margin: 18px 0 50px 0;
+   position: relative;
 }
-.leftside .imgbox2 img{
+.leftside .imgbox2 img:first-child{
    width: 100%;
    height: 100%;
+}
+.leftside .imgbox2 img:last-child{
+   position: absolute;
+   bottom: 0;
+   right: 0;
 }
 .leftside .listbox2{
    margin-bottom: 3px;
@@ -450,8 +497,8 @@ li{
 }
 
 @keyframes animate{
-   -10% {
-      background-position: 0;
+   0% {
+      background-position: 0 0;
    }
    100% {
       background-position: 0 -8050px;
@@ -513,9 +560,10 @@ li{
 .rightbox .a3{
    padding: 10px 24px;
    font-size: 11px;
-   color: #3e414f;
+   /* color: #3e414f; */
+   color: #65666e;
    border-bottom: 1px solid #e8e8ec;
-   background-color: white;
+   /* background-color: white; */
 }
 .rightbox .a3:first-child{
    border-bottom: 1px solid #e8e8ec;
