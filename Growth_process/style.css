@@ -71,8 +71,6 @@ body{
 .listhead:hover:after{
     width: 80%;
 }
-    
-
 .studylist .list{
     width: 150px;
     height: 850px;
@@ -146,6 +144,9 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 30px;
+}
+.imgbox{
+    border: 1px solid rgb(219, 219, 219);
 }
 .pagelist .imgbox div{
     position: absolute;
