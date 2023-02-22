@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/*###############전체선택자 속성값###############*/
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+ }
+ 
+ a:link, a:visited{
+    text-decoration: none; color: black;
+ }
+ 
+ li{
+    list-style: none;
+ }
+ /*###############클래스 공통 속성값###############*/
+ .Flex{
+    display: flex;
+ }
+ .Flex_aic{
+    display: flex;
+    align-items: center;
+ }
+ .Flex_cc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .FC_basicgray{
+    color: #65666E;
+ }
+ .Pointer{
+    cursor: pointer;
+ }
+ 
+ /*###############탑 로고###############*/
+ .logo{
+    width: 100%;
+    min-width: 1270px;
+    height: 62px;
+    justify-content: space-between;
+    padding: 23px 30px 23px 21px;
+    background-color: white;
+ }
+ 
+ .logo .left{
+    width: 65px;
+    height: 62px;
+    justify-content: space-between;
+    line-height: 62px;
+ }
+ 
+ .logo .left:hover>.hamburger:before ,.logo .left:hover>.hamburger:after, .logo .left:hover>.hamburger div{background-color: #0077ff;}
+ .logo .left:hover>.menu ,.right div:nth-child(3):hover{color: #0077ff;}
+ 
+ .logo .hamburger{position: relative; width: 16px; height: 16px;}
+ .hamburger:before, .hamburger div, .hamburger:after{
+    position: absolute;
+    height: 2.3px;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    content: "";
+    display: block;
+    transition: 0.3s;
+ }
+ .hamburger:before{top: 0;} .hamburger div{top: 50%; transform: translateY(-50%);} .hamburger:after{bottom: 0;}
+ 
+ .logo .menu{
+    color: #17191d;
+    font-weight: bold;
+    padding-right: 6px;
+    transition: 0.3s;
+ }
+ 
+ .logo .center{
+    padding-left: 245px;
+    padding-top: 5px;
+ }
+ 
+ .logo .cardimg, .logo .pcroomimg{
+    position: relative;
+    width: 33px;
+ }
+ .logo .cardimg:after, .logo .pcroomimg:after{
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    background-color:black;
+    color: white;
+    position: absolute;
+    font-size: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14px;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid black;
+    opacity: 0;
+    transition: 0.3s;
+ }
+ .logo .cardimg:after{
+    content: "넥슨현대카드";
+    width: 80px;
+ }
+ .logo .pcroomimg:after{
+    content: "PC방";
+    width: 40px;
+ }
+ .logo .cardimg:hover:after, .logo .pcroomimg:hover:after{
+    opacity: 1;
+ }
+ 
+ 
+ .right div{
+    margin-right: 10px;
+ }
+ .right div:nth-child(3){
+    font-size: 14px;
+    font-weight: bold;
+    color: #17191D;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+ }
+ .right div:last-child{
+    margin-right: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #080410;
+    border-radius: 19px;
+    border: 2px solid #17191D;
+    width: 80px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+ }
+ 
+ .right div:last-child:hover{
+    border: 2px solid #0077ff;
+    background-color: #0077ff;
+    color: white;
+ }
+
+body{
+   background-color: #F8F9FA;
+}
+ /*-------------메인이미지라인----------*/
+
+.mainimg{
+   position: relative;
+   width: 100%;
+   min-width: 1150px;
+   min-height: 341px;
+   height: 500px;
+   }
+
+
+   .a1{
+      width: 100%;
+      height: 100%;
+      background-image: url('https://rs.nxfs.nexon.com/bannerusr/23/2/HmgD15201413570.jpg');
+   }
+   .a2{
+      background-image: url('https://rs.nxfs.nexon.com/bannerusr/23/2/cDpi15201414389.png');
+      width: 550px;
+      height: 200px;
+      position: absolute;
+      bottom:80px;
+      left: 320px;
+      background-position: 0 -140px;
+   }
+
+ 
+
+ .mainlistbox{
+   width: 1328px;
+   padding: 0 24px;
+   border: 1px solid black;
+   height: 200px;
+   margin: 0 auto;
+   margin-top: 100px;
+   height: 100%;
+ }
+
+ .mainlistbox .mainhead1{
+   color: #17191d;
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 20px;
+ }
+
+ .newupdateline{
+   margin-bottom: 10px;
+   justify-content: space-between;
+ }
+ .newupdateline .left2{
+   color: #00cec6;
+   font-weight: 700;
+   font-size: 16px;
+ }
+
+ .newupdateline .leftarrow,  .newupdateline .rightarrow{
+   padding: 2px;
+   border: 1px solid #9fa1a7;
+   width: 28px;
+   height: 28px;
+ }
+ 
+ .newupdateline .leftarrow{
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_recommend.svg');
+   border-right: none;
+   background-position: -49px 1px;
+   opacity: 0.4;
+ }
+ .newupdateline .rightarrow{
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_recommend.svg');
+   background-position: -49px -49px;
+ }
+
+ .newupdateline .right2 div{
+   width: 60px;
+   font-size: 13px;
+   text-align: right;
+   margin-left: 23px;
+   color: #17191d;
+ }
+/*-------------------------게임,로그인---*/
+
+.game_loginbox{
+   margin-bottom: 100px;
+}
+
+ .game_loginbox .gamebox li{
+   width: 153px;
+   height: 342px;
+   margin-right: 15px;
+   background-color: white;
+ }
+
+ .gamebox .imgbox{
+   height: 192px;
+   width: 100%;
+   margin-bottom: 10px;
+ }
+
+ .game_loginbox .imgbox img{
+   height: 100%;
+   width: 100%;
+ }
+ .gamebox .pick{
+   border-bottom: 2px solid #f78029;
+ }
+ .gamebox .pick .bottomimg{
+   font-size: 12px;
+   font-weight: bold;
+   background-color: #fef3e0;
+   color: #f78029;
+   border-radius: 5px;
+   padding: 2px 3px;
+   width: 123px;
+ }
+
+ .gamebox .wordbox{
+   margin-left: 12px;
+ }
+ .gamebox .littlepick{
+      display: inline-block;
+      background-color: #f78029;
+      font-size: 10px;
+      color: white;
+      font-weight: bold;
+      height: 16px;
+      width: 32px;
+      line-height: 16px;
+      text-align: center;
+      border-radius: 100px;
+      margin-bottom: 5px;
+ }
+ .gamebox .littlesuggest{
+   background-color: #00dbd3;
+   width: 32px;
+   height: 16px;
+   line-height: 16px;
+   text-align: center;
+   border-radius: 100px;
+   margin-bottom: 5px;
+   font-size: 10px;
+   font-weight: bold;
+   color: #ffffff;
+ }
+ .gamebox .wordbox .word{
+   font-size: 14px;
+   color: #17191d;
+   font-weight: bold;
+   margin-bottom: 65px;
+ }
+
+ .loginbox{
+   padding: 70px 48px;
+   width: 438px;
+   height: 342px;
+   background-color: white;
+ }
+
+ /* .paddingloginbox{
+   border: 1px solid black;
+ } */
+ .loginbox .toptoplogin{
+   background-color: #17191d;
+   height: 60px;
+   line-height: 60px;
+   width: 342px;
+   text-align: center;
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+
+ .loginbox .toplogin div{
+   height: 52px;
+   line-height: 52px;
+   text-align: center;
+   width: 170px;
+   background-color: #4a4e57;
+   color: white;
+   font-size: 14px;
+   font-weight: bold;
+   margin-bottom: 20px;
+ }
+
+ .loginbox .toplogin div:first-child{
+   margin-right: 2px;
+ }
+
+ .midlogin{
+   width: 342px;
+   height: 42px;
+   background-color: #f8f9fa;
+   color:#797881;
+   line-height: 42px;
+   text-align: left;
+   font-size: 12px;
+   margin-bottom: 10px;
+ }
+ .midlogin .google,  .midlogin .facebook,  .midlogin .naver, .midlogin .apple  {
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_login.png');
+   width: 22px;
+   height: 22px;
+ }
+ .midlogin .google{background-position: 0 50px;}
+ .midlogin .facebook{background-position: 0 0;}
+ .midlogin .naver{background-position: 0 0;}
+ .midlogin .apple{background-position: 0 0;}
+
+ .loginbox .bottomlogin{
+   color: #737881;
+   font-size: 12px;
+ }
+
+ .loginbox .bottomlogin div:first-child{margin-right: 16px;}
+ .loginbox .bottomlogin div:nth-child(2){margin-right: 137px;}
+
+
