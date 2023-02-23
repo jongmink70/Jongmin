@@ -687,6 +687,11 @@ body{
    border: 1px solid white;
    background-color: #fff;
    font-size: 13px;
+   transition: 0.3s;
+   cursor: pointer;
+ }
+ .whitebox span:hover,.whitebox p:hover{
+   color: #0077ff;
  }
  .whitebox span:first-child{
    color: #fff;
@@ -701,6 +706,7 @@ body{
    background-color: #fff;
    font-size: 13px;
    margin-top: 20px;
+   cursor: pointer;
  }
 
 
@@ -714,6 +720,7 @@ body{
    margin-right: 25px;
    margin-bottom: 60px;
    background-color: white;
+   transition: 0.3s;
 }
 .imgbox33:last-child{
    margin-right: 0;
@@ -726,7 +733,14 @@ body{
 .btimgbox img{
    width: 100%;
    height: 100%;
+   transition: 0.3s;
 }
+.imgbox33:hover> .btimgbox> img{
+   scale: 1.1;
+ }
+ .imgbox33:hover{
+   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.116);
+ }
 .imgbox33{
    flex-direction: column;
 }
