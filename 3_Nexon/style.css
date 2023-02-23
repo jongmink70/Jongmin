@@ -148,26 +148,41 @@ body{
 
 .mainimg{
    position: relative;
-   width: 100%;
-   min-width: 1150px;
-   min-height: 341px;
-   height: 500px;
+   width: 100vw;
+   min-width: 1270px;
+   height: 600px;
    }
 
 
    .a1{
       width: 100%;
       height: 100%;
-      background-image: url('https://rs.nxfs.nexon.com/bannerusr/23/2/HmgD15201413570.jpg');
+      background: url('https://rs.nxfs.nexon.com/bannerusr/23/2/HmgD15201413570.jpg') no-repeat;
+      background-size: cover;
    }
    .a2{
       background-image: url('https://rs.nxfs.nexon.com/bannerusr/23/2/cDpi15201414389.png');
       width: 550px;
       height: 200px;
       position: absolute;
-      bottom:80px;
+      bottom:170px;
       left: 320px;
       background-position: 0 -140px;
+      background-size: cover;
+   }
+   .a3{
+      position: absolute;
+      width: 610px;
+      height: 360px;      
+      left: 1050px;
+      top: 80px;
+      cursor: pointer;
+      border: 1px solid rgba(116, 115, 115, 0.979);
+      opacity: 0.9;
+   }
+   .a3 img{
+      width: 100%;
+      height: 100%;
    }
 
  
@@ -175,11 +190,12 @@ body{
  .mainlistbox{
    width: 1328px;
    padding: 0 24px;
-   border: 1px solid black;
    height: 200px;
    margin: 0 auto;
    margin-top: 100px;
    height: 100%;
+   margin-bottom: 250px;
+   min-width: 1270px;
  }
 
  .mainlistbox .mainhead1{
@@ -227,7 +243,7 @@ body{
 /*-------------------------게임,로그인---*/
 
 .game_loginbox{
-   margin-bottom: 100px;
+   margin-bottom: 60px;
 }
 
  .game_loginbox .gamebox li{
@@ -337,21 +353,28 @@ body{
    width: 342px;
    height: 42px;
    background-color: #f8f9fa;
-   color:#797881;
+   color: #9fa1a7;
    line-height: 42px;
-   text-align: left;
+   text-align: center;
    font-size: 12px;
    margin-bottom: 10px;
  }
+
+ .midlogin div:first-child{
+   margin-left: 42px;
+   margin-right: 18px;
+ }
+
  .midlogin .google,  .midlogin .facebook,  .midlogin .naver, .midlogin .apple  {
    background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_login.png');
    width: 22px;
    height: 22px;
+   margin-right: 10px;
  }
- .midlogin .google{background-position: 0 50px;}
- .midlogin .facebook{background-position: 0 0;}
- .midlogin .naver{background-position: 0 0;}
- .midlogin .apple{background-position: 0 0;}
+ .midlogin .google{background-position: 0 200px;}
+ .midlogin .facebook{background-position: 0 150px;}
+ .midlogin .naver{background-position: 0 100px;}
+ .midlogin .apple{background-position: 0 50px;}
 
  .loginbox .bottomlogin{
    color: #737881;
@@ -362,3 +385,237 @@ body{
  .loginbox .bottomlogin div:nth-child(2){margin-right: 137px;}
 
 
+ .newgame{
+   margin-top: 40px;
+ }
+
+ .newgame .newgamelist{
+   width: 302px;
+   height: 144px;
+   margin-right: 20px;
+   position: relative;
+   padding-left: 20px;
+   background-color: white;
+   margin-bottom: 120px;
+   border-top: 2px solid #07f;
+ }
+
+ .newgame .new1{
+   padding: 1px 5px;
+   background-color: #0077ff;
+   color: #ffffff;
+   font-size: 10px;
+   height: 16px;
+   line-height: 12px;
+   border: 1px solid #07f;
+   border-radius: 8px;
+   display: inline-block;
+   margin-bottom: 7px;
+   margin-top: 23px;
+ }
+ .newgame .new2{
+   font-size: 16px;
+   color: #17191d;
+   background-color: #fff;
+   font-weight: 700;
+   margin-bottom: 7px;
+ }
+
+.backimg{
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_device_s_new.svg');
+   width: 16px;
+   height: 16px;
+   margin-right: 3px;
+}
+.backimg:nth-child(1){
+   margin-right: 7px;
+   position: relative;
+}
+.backimg:nth-child(2){
+  background-position: 0 100px;
+
+}
+.backimg:nth-child(3){
+   background-position: 0 50px;
+ }
+.backimg .line{
+   position: absolute;
+   right: -4px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 1px;
+   height: 8px;
+   background-color: #dddcdc;
+}
+
+.backimg1{
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_device_s_new.svg');
+   width: 16px;
+   height: 16px;
+   margin-right: 3px;
+}
+
+
+.imgmenu div:last-child{
+   color: #9fa1a7;
+   font-size: 12px;
+   font-weight: 400;
+}
+
+.newgame .new3{
+   margin-top: 30px;
+   color: #737881;
+   font-size: 12px;
+}
+.newgame .new3 span{
+   font-weight: bold;
+}
+
+
+ .newgame .newimg{
+   position: absolute;
+   width: 140px;
+   height: 180px;
+   bottom: 0;
+   right: 0;
+ }
+
+ .mainhead3{
+   justify-content: space-between;
+   margin-bottom: 25px;
+ }
+
+
+ .whitebox{
+   width: 1280px;
+   height: 99px;
+   background-color: white;
+   padding: 20px 20px 3px 30px;
+   margin-bottom: 40px;
+ }
+
+ .whitebox span{
+   margin-right: 25px;
+   color: #9fa1a7;
+   border: 1px solid white;
+   background-color: #fff;
+   font-size: 13px;
+ }
+ .whitebox span:first-child{
+   color: #fff;
+   background-color: #17191d;
+   border: 1px solid #17191D;
+   border-radius: 12px;
+   padding: 1px 10px;
+ }
+ .whitebox p{
+   color: #9fa1a7;
+   border: 1px solid white;
+   background-color: #fff;
+   font-size: 13px;
+   margin-top: 20px;
+ }
+
+
+.lastbox{
+   width: 1280px;
+}
+
+.imgbox33{
+   width: 302px;
+   height: 320px;
+   margin-right: 25px;
+   margin-bottom: 60px;
+   background-color: white;
+}
+.imgbox33:last-child{
+   margin-right: 0;
+}
+.btimgbox{
+   width: 302px;
+   height: 200px;
+   overflow: hidden;
+}
+.btimgbox img{
+   width: 100%;
+   height: 100%;
+}
+.imgbox33{
+   flex-direction: column;
+}
+
+.btwordbox{
+   padding: 20px 15px 0 20px;
+}
+
+.lastbox .b1{
+   justify-content: space-between;
+}
+
+.lastbox .btword{
+   color: #17191d;
+   font-size: 16px;
+   font-weight: bold;
+}
+.lastbox .b2{
+   margin-top: 8px;
+   color: #737881;
+   font-size: 12px;
+   margin-bottom: 17px;
+}
+.lastbox .b2 span{
+   font-weight: bold;
+   color: #07f;
+}
+
+.lastbox .b3{
+   justify-content: flex-end;
+}
+
+.imgbox33{
+   cursor: pointer;
+}
+
+.lastbox .b3 div{
+   width: 24px;
+   height: 24px;
+}
+.lastbox .b1 .c0{
+   width: 20px;
+   height: 20px;
+}
+.lastbox .b1 .c0{
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_community.svg');
+   background-position: 0 -50px;
+
+
+}
+.lastbox .b3 .c3{
+   background-image: url('https://rs.nxfs.nexon.com/home/images/main/set_device_new.svg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+   background-color: #222426;
+   width: 100%;
+   height: 300px;
+}
