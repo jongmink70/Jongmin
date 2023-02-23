@@ -391,6 +391,10 @@ body{
    text-align: right;
    margin-left: 23px;
    color: #17191d;
+   transition: 0.3s;
+ }
+ .newupdateline .right2 div:hover{
+   color: #0077ff;
  }
 /*-------------------------게임,로그인---*/
 
@@ -403,17 +407,27 @@ body{
    height: 342px;
    margin-right: 15px;
    background-color: white;
+   transition: 0.3s;
+   cursor: pointer;
  }
 
  .gamebox .imgbox{
    height: 192px;
    width: 100%;
    margin-bottom: 10px;
+   overflow: hidden;
  }
 
  .game_loginbox .imgbox img{
    height: 100%;
    width: 100%;
+   transition: 0.3s;
+ }
+ .pick:hover> .imgbox> img,.suggest:hover> .imgbox> img{
+   scale: 1.1;
+ }
+ .pick:hover, .suggest:hover{
+   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.116);
  }
  .gamebox .pick{
    border-bottom: 2px solid #f78029;
@@ -470,9 +484,6 @@ body{
    background-color: white;
  }
 
- /* .paddingloginbox{
-   border: 1px solid black;
- } */
  .loginbox .toptoplogin{
    background-color: #17191d;
    height: 60px;
@@ -483,6 +494,10 @@ body{
    font-size: 15px;
    font-weight: bold;
    margin-bottom: 10px;
+   transition: 0.3s;
+ }
+ .toptoplogin:hover{
+   background-color: #0077ff;
  }
 
  .loginbox .toplogin div{
@@ -495,6 +510,10 @@ body{
    font-size: 14px;
    font-weight: bold;
    margin-bottom: 20px;
+   transition: 0.3s;
+ }
+ .toplogin div:hover{
+   background-color: #0077ff;
  }
 
  .loginbox .toplogin div:first-child{
@@ -532,6 +551,9 @@ body{
    color: #737881;
    font-size: 12px;
  }
+ .loginbox .bottomlogin div:hover{
+   color:#0077ff;
+ }
 
  .loginbox .bottomlogin div:first-child{margin-right: 16px;}
  .loginbox .bottomlogin div:nth-child(2){margin-right: 137px;}
@@ -550,6 +572,17 @@ body{
    background-color: white;
    margin-bottom: 120px;
    border-top: 2px solid #07f;
+   transition: 0.3s;
+ }
+ .newgame .newgamelist:hover{
+   background-image: linear-gradient(158deg,#07f 50%,rgba(0,219,211,.83));
+ }
+ .newgamelist:hover>.new2, .newgamelist:hover>.imgmenu>div:last-child,.newgamelist:hover>.new3{
+   color: white;
+ }
+ .newgamelist:hover>.new1{
+   color: #0077ff;
+   background-color: white;
  }
 
  .newgame .new1{
@@ -564,13 +597,14 @@ body{
    display: inline-block;
    margin-bottom: 7px;
    margin-top: 23px;
+   transition: 0.3s;
  }
  .newgame .new2{
    font-size: 16px;
    color: #17191d;
-   background-color: #fff;
    font-weight: 700;
    margin-bottom: 7px;
+   transition: 0.3s;
  }
 
 .backimg{
@@ -618,6 +652,7 @@ body{
    margin-top: 30px;
    color: #737881;
    font-size: 12px;
+   transition: 0.3s;
 }
 .newgame .new3 span{
    font-weight: bold;
