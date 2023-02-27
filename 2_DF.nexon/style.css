@@ -220,29 +220,11 @@ li{
 }
 /*###############메인박스 center###############*/
 
-.centerbox .mainimgbox{
-    position: relative;
-    height: 200px;
-   }
-.centerbox .mainimgbox img, .centerbox .mainimgbox div{
-   position: absolute;
-   bottom: 0;
-}
-.centerbox .mainimgbox .mainimg1{
-   width: 850px;
-   height: 350px;
-}
-.centerbox .mainimgbox .mainimg2{
-   right: -37px;
-}
-.centerbox .mainimgbox .blankbox{
-   width: 850px;
-   height: 200px;
-   z-index: 999;
-}
 
 .centerbox .mainlist{
    padding: 45px 40px 50px 45px;
+   position: relative;
+   top: -150px;
 }
 
 .centerbox .mainlist .leftside{

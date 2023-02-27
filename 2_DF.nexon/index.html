@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>액션쾌감!!! 던전앤파이터</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <script src="../library/swiper/swiper.js"></script>
+     <link rel="stylesheet" href="../library/swiper/swiper.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -130,11 +133,26 @@
                 </ul>
                 <!--센터박스-->
                 <div class="centerbox">
-                    <div class="mainimgbox">
-                        <img class="mainimg1" src="https://bbscdn.df.nexon.com/data6/commu/202302/085623_63e436a7871ad.png" alt="">
-                        <img class="mainimg2 Pointer" src="./images/start.png" alt="">
-                        <div class="blankbox Pointer"></div>
-                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/143000_63f456d89de9c.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/163352_63f473e0c4ad0.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/162510_63f471d6b8428.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/143958_63f6fc2e8a0d4.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/205737_63f4b1b1a9ad6.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/181034_63f48a8ad8ff1.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/085713_63e436d9cb25b.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/182128_63f5de984f7c6.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/175204_63f48634f3d80.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/173704_63f482b0dd8a3.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/175619_63f487330759d.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/140312_63f2ff100e8cd.png" alt="">
+                            <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202301/103536_63d87068db5c6.png" alt="">
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     <div class="mainlist">
                         <div class="Flex">
                             <div class="leftside">
@@ -431,6 +449,34 @@
 
 
 
+      <script>
+
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

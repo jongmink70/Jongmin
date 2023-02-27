@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.css">
+  <!-- Demo styles -->
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/143000_63f456d89de9c.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/163352_63f473e0c4ad0.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/162510_63f471d6b8428.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/143958_63f6fc2e8a0d4.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/205737_63f4b1b1a9ad6.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/181034_63f48a8ad8ff1.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/085713_63e436d9cb25b.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/182128_63f5de984f7c6.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/175204_63f48634f3d80.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/173704_63f482b0dd8a3.png" alt="">
+        <img class="swiper-slide" src="https://bbscdn.df.nexon.com/data6/commu/202302/175619_63f487330759d.png" alt="">
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
