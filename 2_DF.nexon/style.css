@@ -644,3 +644,191 @@ li{
    margin-bottom: 17px;
 }
 .footer img:nth-child(5){margin-right: 15px;}
+
+
+.graybox{
+   background-color: #000;
+   opacity: 0.7;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   visibility: hidden;
+}
+.sidemenu{
+   position: absolute;
+   left: -430px;
+   top: 0;
+   width: 430px;
+   height: 100%;
+   background-color: white;
+   flex-direction: column;
+   /* visibility: hidden; */
+   transition: 0.3s;
+}
+
+.topline{
+   height: 63px;
+   border-bottom: 1px solid #e8e8ec;
+   padding: 31px 22px;
+}
+.topline .xbox{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   left: 22px;
+   top: 31px;
+   cursor: pointer;
+}
+.topline .x1{
+   width: 20px;
+   height: 2px;
+   background-color: #17191d;
+   transform: rotate(45deg);
+   position: absolute; 
+   transition: 0.3s;
+}
+.topline .x2{
+   width: 20px;
+   height: 2px;
+   background-color: black;
+   transform: rotate(-45deg);
+   position: absolute;
+   transition: 0.3s;
+}
+.topline .xbox:hover>.x1,.topline .xbox:hover>.x2{
+   background-color: #0077ff;
+}
+
+.overscroll{
+   overflow-y: scroll;
+   width: 100%;
+   height: 656px;
+   padding: 25px 0 0 40px;
+}
+
+.overtop{
+   display: flex;
+   height: 32px;
+   margin-bottom: 10px;
+}
+
+.allgame{
+   color: #17191D;
+   border-bottom: 2px solid #17191D;
+   font-size: 12px;
+   margin-top: 10px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.usercenter{
+   padding: 0 15px;
+   border: 2px solid #9fa1a7;
+   color: #9fa1a7;
+   font-size: 12px;
+   font-weight: bold;
+   line-height: 30px;
+   cursor: pointer;
+   transition: 0.3s;
+   margin-left: 223px;
+}
+.usercenter:hover{
+   color: white;
+   background-color: #9fa1a7;
+}
+
+.sublistbox1{
+   font-size: 12px;
+   height: 860px;
+}
+.sublistbox1 ul:first-child{
+   margin-right: 50px;
+}
+.toplistword{
+   margin-top: 30px;
+   margin-bottom: 10px;
+   color: #17191d;
+   font-weight: bold;
+}
+.listword{
+   margin-bottom: 7px;
+   color: #737881;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.listword:hover{
+   color: #0077ff;
+}
+
+.overscroll::-webkit-scrollbar{
+   display: none;
+   transition: 0.3s;
+}
+
+.overscroll:hover::-webkit-scrollbar{
+   display: block;
+   width: 18px;
+}
+.overscroll::-webkit-scrollbar-thumb{
+   background-color: #e1e2e7;
+   border-radius: 10px;
+   background-clip: padding-box;
+   border: 6px solid transparent;
+}
+
+.bottomtop{
+   position: absolute;
+   bottom: 50px;
+   height: 150px;
+   width: 100%;
+   left: 0;
+   background-color: #222426;
+   padding: 30px 45px;
+   color: white;
+   font-size: 12px;
+   font-weight: bold;
+}
+.bottomtop li{
+   width: 105px;
+   height: 30px;
+   margin: 0px 10px 5px 15px;
+   cursor: pointer;
+}
+.bottomtop li:hover{
+   color: #0077ff;
+}
+.bottomfix{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+   background-color: #17191d;
+   transition: 0.3s;
+   color: white;
+   font-weight: bold;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   font-size: 12px;
+   cursor: pointer;
+}
+
+.bottomfix:hover{
+   background-color: #0077ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollLock {overflow:hidden;}

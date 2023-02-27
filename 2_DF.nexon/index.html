@@ -447,6 +447,103 @@
         </div>
     </div>
 
+    <div class="graybox"></div>
+    <div class="sidemenu">
+        <div class="topline">
+            <div class="xbox">
+                <div class="x1"></div>
+                <div class="x2"></div>
+            </div>
+        </div>
+        <div class="overscroll">
+            <div class="overtop">
+                <div class="allgame">전체게임</div>  
+                <div class="usercenter">고객센터</div>  
+            </div>
+            <div class="sublistbox1 Flex">
+                <ul>
+                    <li class="toplistword">A~Z</li>
+                    <li class="listword">FACEPLAY</li>
+                    <li class="listword">FIFA 모바일</li>
+                    <li class="listword">FIFA 온라인 4</li>
+                    <li class="listword">THE FINALS</li>
+                    <li class="listword">V4</li>
+                    <li class="toplistword">ㄱ~ㄹ</li>
+                    <li class="listword">고질라 디펜스 포스</li>
+                    <li class="listword">그랜드체이스 클래식</li>
+                    <li class="listword">나이트 워커</li>
+                    <li class="listword">넥슨타운: NEXONTOWN</li>
+                    <li class="listword">던전앤파이터</li>
+                    <li class="listword">던전앤파이터 듀얼</li>
+                    <li class="listword">던전앤파이터 모바일</li>
+                    <li class="listword">데이브 더 다이버</li>
+                    <li class="listword">드래곤네스트</li>
+                    <li class="toplistword">ㅁ~ㅅ</li>
+                    <li class="listword">마비노기</li>
+                    <li class="listword">마비노기 영웅전</li>
+                    <li class="listword">메이플스토리</li>
+                    <li class="listword">메이플스토리 월드</li>
+                    <li class="listword">메이플스토리2</li>
+                    <li class="listword">메이플스토리M</li>
+                    <li class="listword">문명: Reign of Power</li>
+                    <li class="listword">바람의나라</li>
+                    <li class="listword">바람의나라: 연</li>
+                    <li class="listword">버블파이터</li>
+                    <li class="listword">베일드 엑스퍼트</li>
+                    <li class="listword">블루 아카이브</li>
+                    <li class="listword">사이퍼즈</li>
+                    <li class="listword">서든어택</li>
+                </ul>
+                <ul>
+                    <li class="toplistword">ㅇ~ㅈ</li>
+                    <li class="listword">아스가르드</li>
+                    <li class="listword">아키에이지</li>
+                    <li class="listword">어둠의전설</li>
+                    <li class="listword">엘소드</li>
+                    <li class="listword">워헤이븐</li>
+                    <li class="listword">일랜시아</li>
+                    <li class="toplistword">ㅊ~ㅋ</li>
+                    <li class="listword">카운터-스트라이크 온라인</li>
+                    <li class="listword">카트라이더</li>
+                    <li class="listword">카트라이더 러쉬플러스</li>
+                    <li class="listword">카트라이더: 드리프트</li>
+                    <li class="listword">커츠펠</li>
+                    <li class="listword">코노스바 모바일 - 판타스틱 데이즈</li>
+                    <li class="listword">크레이지아케이드</li>
+                    <li class="listword">클로저스</li>
+                    <li class="toplistword">ㅌ~ㅎ</li>
+                    <li class="listword">테일즈런너</li>
+                    <li class="listword">테일즈위버</li>
+                    <li class="listword">파이널판타지14</li>
+                    <li class="listword">퍼스트 디센던트</li>
+                    <li class="listword">프라시아 전기</li>
+                    <li class="listword">프리스타일2</li>
+                    <li class="listword">히트2</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomtop">
+            <ul class="Flex_aic">
+                <li>내정보</li>
+                <li>이벤트</li>
+                <li>넥슨캐시</li>
+            </ul>
+            <ul  class="Flex_aic">
+                <li>보안센터</li>
+                <li>공지사항</li>
+                <li>넥슨플러그</li>
+            </ul>
+            <ul class="Flex_aic">
+                <li>고객센터</li>
+                <li>넥슨현대카드</li>
+                <li>넥슨플레이</li>
+            </ul>
+
+
+        </div>
+        <div class="bottomfix">전체서비스</div>
+    </div>
+
 
 
       <script>
@@ -476,6 +573,52 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+
+
+    const body = document.getElementsByTagName('body')[0];
+    
+        $('.logo .left').click(function(){
+            body.classList.add('scrollLock');
+            $('.sidemenu').css({
+                    'left':'0',
+                    'visibility':'visible',
+                });
+            $('.graybox').css({
+                    'visibility':'visible'
+                });
+        })
+
+        $('.xbox').click(function(){
+            $('.graybox').css({
+                    'visibility':'hidden'
+                });
+                $('.sidemenu').css({
+                    'left':'-430px',
+                    'visibility':'hidden'
+                })
+        })
+        
+        
+        $('.graybox').click(
+            function(){
+                body.classList.remove('scrollLock');
+                $('.graybox').css({
+                    'visibility':'hidden'
+                });
+                $('.sidemenu').css({
+                    'left':'-430px',
+                    'visibility':'hidden'
+                })
+            }
+        )
+
+
+   
+
+
+
+
   </script>
 </body>
 
